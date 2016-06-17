@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <string name="app_name">WindowView Demo</string>
+  <string name="content_description">Window image</string>
+
+</resources>
