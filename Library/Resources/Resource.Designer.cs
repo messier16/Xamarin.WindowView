@@ -28,28 +28,31 @@ namespace Jmedeisis.WindowView
 		{
 			
 			// aapt resource value: 0x7f010004
-			public static int horizontal_origin = 2130771972;
+			public static int wwv_horizontal_origin = 2130771972;
 			
-			// aapt resource value: 0x7f010007
-			public static int max_constant_translation = 2130771975;
+			// aapt resource value: 0x7f010008
+			public static int wwv_max_constant_translation = 2130771976;
 			
 			// aapt resource value: 0x7f010001
-			public static int max_pitch = 2130771969;
+			public static int wwv_max_pitch = 2130771969;
 			
 			// aapt resource value: 0x7f010002
-			public static int max_roll = 2130771970;
-			
-			// aapt resource value: 0x7f010005
-			public static int orientation_mode = 2130771973;
-			
-			// aapt resource value: 0x7f010000
-			public static int sensor_sampling_period = 2130771968;
+			public static int wwv_max_roll = 2130771970;
 			
 			// aapt resource value: 0x7f010006
-			public static int translate_mode = 2130771974;
+			public static int wwv_orientation_mode = 2130771974;
+			
+			// aapt resource value: 0x7f010000
+			public static int wwv_sensor_sampling_period = 2130771968;
+			
+			// aapt resource value: 0x7f010005
+			public static int wwv_tilt_sensor_mode = 2130771973;
+			
+			// aapt resource value: 0x7f010007
+			public static int wwv_translate_mode = 2130771975;
 			
 			// aapt resource value: 0x7f010003
-			public static int vertical_origin = 2130771971;
+			public static int wwv_vertical_origin = 2130771971;
 			
 			static Attribute()
 			{
@@ -64,17 +67,23 @@ namespace Jmedeisis.WindowView
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f020003
-			public static int Absolute = 2130837507;
-			
 			// aapt resource value: 0x7f020005
-			public static int Constant = 2130837509;
+			public static int Absolute = 2130837509;
 			
-			// aapt resource value: 0x7f020006
-			public static int Proportional = 2130837510;
+			// aapt resource value: 0x7f020003
+			public static int Automatic = 2130837507;
+			
+			// aapt resource value: 0x7f020007
+			public static int Constant = 2130837511;
 			
 			// aapt resource value: 0x7f020004
-			public static int Relative = 2130837508;
+			public static int Manual = 2130837508;
+			
+			// aapt resource value: 0x7f020008
+			public static int Proportional = 2130837512;
+			
+			// aapt resource value: 0x7f020006
+			public static int Relative = 2130837510;
 			
 			// aapt resource value: 0x7f020000
 			public static int fast = 2130837504;
@@ -98,7 +107,7 @@ namespace Jmedeisis.WindowView
 		public partial class Styleable
 		{
 			
-			public static int[] WindowView = new int[]
+			public static int[] wwv_WindowView = new int[]
 			{
 					2130771968,
 					2130771969,
@@ -107,31 +116,35 @@ namespace Jmedeisis.WindowView
 					2130771972,
 					2130771973,
 					2130771974,
-					2130771975};
+					2130771975,
+					2130771976};
 			
 			// aapt resource value: 4
-			public static int WindowView_horizontal_origin = 4;
+			public static int wwv_WindowView_wwv_horizontal_origin = 4;
 			
-			// aapt resource value: 7
-			public static int WindowView_max_constant_translation = 7;
+			// aapt resource value: 8
+			public static int wwv_WindowView_wwv_max_constant_translation = 8;
 			
 			// aapt resource value: 1
-			public static int WindowView_max_pitch = 1;
+			public static int wwv_WindowView_wwv_max_pitch = 1;
 			
 			// aapt resource value: 2
-			public static int WindowView_max_roll = 2;
-			
-			// aapt resource value: 5
-			public static int WindowView_orientation_mode = 5;
-			
-			// aapt resource value: 0
-			public static int WindowView_sensor_sampling_period = 0;
+			public static int wwv_WindowView_wwv_max_roll = 2;
 			
 			// aapt resource value: 6
-			public static int WindowView_translate_mode = 6;
+			public static int wwv_WindowView_wwv_orientation_mode = 6;
+			
+			// aapt resource value: 0
+			public static int wwv_WindowView_wwv_sensor_sampling_period = 0;
+			
+			// aapt resource value: 5
+			public static int wwv_WindowView_wwv_tilt_sensor_mode = 5;
+			
+			// aapt resource value: 7
+			public static int wwv_WindowView_wwv_translate_mode = 7;
 			
 			// aapt resource value: 3
-			public static int WindowView_vertical_origin = 3;
+			public static int wwv_WindowView_wwv_vertical_origin = 3;
 			
 			static Styleable()
 			{

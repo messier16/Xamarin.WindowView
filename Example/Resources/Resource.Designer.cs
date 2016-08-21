@@ -26,30 +26,34 @@ namespace Example
 		
 		public static void UpdateIdValues()
 		{
-			global::Jmedeisis.WindowView.Resource.Attribute.horizontal_origin = global::Example.Resource.Attribute.horizontal_origin;
-			global::Jmedeisis.WindowView.Resource.Attribute.max_constant_translation = global::Example.Resource.Attribute.max_constant_translation;
-			global::Jmedeisis.WindowView.Resource.Attribute.max_pitch = global::Example.Resource.Attribute.max_pitch;
-			global::Jmedeisis.WindowView.Resource.Attribute.max_roll = global::Example.Resource.Attribute.max_roll;
-			global::Jmedeisis.WindowView.Resource.Attribute.orientation_mode = global::Example.Resource.Attribute.orientation_mode;
-			global::Jmedeisis.WindowView.Resource.Attribute.sensor_sampling_period = global::Example.Resource.Attribute.sensor_sampling_period;
-			global::Jmedeisis.WindowView.Resource.Attribute.translate_mode = global::Example.Resource.Attribute.translate_mode;
-			global::Jmedeisis.WindowView.Resource.Attribute.vertical_origin = global::Example.Resource.Attribute.vertical_origin;
+			global::Jmedeisis.WindowView.Resource.Attribute.wwv_horizontal_origin = global::Example.Resource.Attribute.wwv_horizontal_origin;
+			global::Jmedeisis.WindowView.Resource.Attribute.wwv_max_constant_translation = global::Example.Resource.Attribute.wwv_max_constant_translation;
+			global::Jmedeisis.WindowView.Resource.Attribute.wwv_max_pitch = global::Example.Resource.Attribute.wwv_max_pitch;
+			global::Jmedeisis.WindowView.Resource.Attribute.wwv_max_roll = global::Example.Resource.Attribute.wwv_max_roll;
+			global::Jmedeisis.WindowView.Resource.Attribute.wwv_orientation_mode = global::Example.Resource.Attribute.wwv_orientation_mode;
+			global::Jmedeisis.WindowView.Resource.Attribute.wwv_sensor_sampling_period = global::Example.Resource.Attribute.wwv_sensor_sampling_period;
+			global::Jmedeisis.WindowView.Resource.Attribute.wwv_tilt_sensor_mode = global::Example.Resource.Attribute.wwv_tilt_sensor_mode;
+			global::Jmedeisis.WindowView.Resource.Attribute.wwv_translate_mode = global::Example.Resource.Attribute.wwv_translate_mode;
+			global::Jmedeisis.WindowView.Resource.Attribute.wwv_vertical_origin = global::Example.Resource.Attribute.wwv_vertical_origin;
 			global::Jmedeisis.WindowView.Resource.Id.Absolute = global::Example.Resource.Id.Absolute;
+			global::Jmedeisis.WindowView.Resource.Id.Automatic = global::Example.Resource.Id.Automatic;
 			global::Jmedeisis.WindowView.Resource.Id.Constant = global::Example.Resource.Id.Constant;
+			global::Jmedeisis.WindowView.Resource.Id.Manual = global::Example.Resource.Id.Manual;
 			global::Jmedeisis.WindowView.Resource.Id.Proportional = global::Example.Resource.Id.Proportional;
 			global::Jmedeisis.WindowView.Resource.Id.Relative = global::Example.Resource.Id.Relative;
 			global::Jmedeisis.WindowView.Resource.Id.fast = global::Example.Resource.Id.fast;
 			global::Jmedeisis.WindowView.Resource.Id.normal = global::Example.Resource.Id.normal;
 			global::Jmedeisis.WindowView.Resource.Id.slow = global::Example.Resource.Id.slow;
-			global::Jmedeisis.WindowView.Resource.Styleable.WindowView = global::Example.Resource.Styleable.WindowView;
-			global::Jmedeisis.WindowView.Resource.Styleable.WindowView_horizontal_origin = global::Example.Resource.Styleable.WindowView_horizontal_origin;
-			global::Jmedeisis.WindowView.Resource.Styleable.WindowView_max_constant_translation = global::Example.Resource.Styleable.WindowView_max_constant_translation;
-			global::Jmedeisis.WindowView.Resource.Styleable.WindowView_max_pitch = global::Example.Resource.Styleable.WindowView_max_pitch;
-			global::Jmedeisis.WindowView.Resource.Styleable.WindowView_max_roll = global::Example.Resource.Styleable.WindowView_max_roll;
-			global::Jmedeisis.WindowView.Resource.Styleable.WindowView_orientation_mode = global::Example.Resource.Styleable.WindowView_orientation_mode;
-			global::Jmedeisis.WindowView.Resource.Styleable.WindowView_sensor_sampling_period = global::Example.Resource.Styleable.WindowView_sensor_sampling_period;
-			global::Jmedeisis.WindowView.Resource.Styleable.WindowView_translate_mode = global::Example.Resource.Styleable.WindowView_translate_mode;
-			global::Jmedeisis.WindowView.Resource.Styleable.WindowView_vertical_origin = global::Example.Resource.Styleable.WindowView_vertical_origin;
+			global::Jmedeisis.WindowView.Resource.Styleable.wwv_WindowView = global::Example.Resource.Styleable.wwv_WindowView;
+			global::Jmedeisis.WindowView.Resource.Styleable.wwv_WindowView_wwv_horizontal_origin = global::Example.Resource.Styleable.wwv_WindowView_wwv_horizontal_origin;
+			global::Jmedeisis.WindowView.Resource.Styleable.wwv_WindowView_wwv_max_constant_translation = global::Example.Resource.Styleable.wwv_WindowView_wwv_max_constant_translation;
+			global::Jmedeisis.WindowView.Resource.Styleable.wwv_WindowView_wwv_max_pitch = global::Example.Resource.Styleable.wwv_WindowView_wwv_max_pitch;
+			global::Jmedeisis.WindowView.Resource.Styleable.wwv_WindowView_wwv_max_roll = global::Example.Resource.Styleable.wwv_WindowView_wwv_max_roll;
+			global::Jmedeisis.WindowView.Resource.Styleable.wwv_WindowView_wwv_orientation_mode = global::Example.Resource.Styleable.wwv_WindowView_wwv_orientation_mode;
+			global::Jmedeisis.WindowView.Resource.Styleable.wwv_WindowView_wwv_sensor_sampling_period = global::Example.Resource.Styleable.wwv_WindowView_wwv_sensor_sampling_period;
+			global::Jmedeisis.WindowView.Resource.Styleable.wwv_WindowView_wwv_tilt_sensor_mode = global::Example.Resource.Styleable.wwv_WindowView_wwv_tilt_sensor_mode;
+			global::Jmedeisis.WindowView.Resource.Styleable.wwv_WindowView_wwv_translate_mode = global::Example.Resource.Styleable.wwv_WindowView_wwv_translate_mode;
+			global::Jmedeisis.WindowView.Resource.Styleable.wwv_WindowView_wwv_vertical_origin = global::Example.Resource.Styleable.wwv_WindowView_wwv_vertical_origin;
 		}
 		
 		public partial class Animation
@@ -410,9 +414,6 @@ namespace Example
 			// aapt resource value: 0x7f010010
 			public const int homeLayout = 2130771984;
 			
-			// aapt resource value: 0x7f0100d5
-			public const int horizontal_origin = 2130772181;
-			
 			// aapt resource value: 0x7f010009
 			public const int icon = 2130771977;
 			
@@ -476,15 +477,6 @@ namespace Example
 			// aapt resource value: 0x7f0100c4
 			public const int maxButtonHeight = 2130772164;
 			
-			// aapt resource value: 0x7f0100d8
-			public const int max_constant_translation = 2130772184;
-			
-			// aapt resource value: 0x7f0100d2
-			public const int max_pitch = 2130772178;
-			
-			// aapt resource value: 0x7f0100d3
-			public const int max_roll = 2130772179;
-			
 			// aapt resource value: 0x7f01009f
 			public const int measureWithLargestChild = 2130772127;
 			
@@ -499,9 +491,6 @@ namespace Example
 			
 			// aapt resource value: 0x7f010004
 			public const int navigationMode = 2130771972;
-			
-			// aapt resource value: 0x7f0100d6
-			public const int orientation_mode = 2130772182;
 			
 			// aapt resource value: 0x7f0100a7
 			public const int overlapAnchor = 2130772135;
@@ -574,9 +563,6 @@ namespace Example
 			
 			// aapt resource value: 0x7f010059
 			public const int selectableItemBackgroundBorderless = 2130772057;
-			
-			// aapt resource value: 0x7f0100d1
-			public const int sensor_sampling_period = 2130772177;
 			
 			// aapt resource value: 0x7f0100a2
 			public const int showAsAction = 2130772130;
@@ -710,12 +696,6 @@ namespace Example
 			// aapt resource value: 0x7f0100b6
 			public const int track = 2130772150;
 			
-			// aapt resource value: 0x7f0100d7
-			public const int translate_mode = 2130772183;
-			
-			// aapt resource value: 0x7f0100d4
-			public const int vertical_origin = 2130772180;
-			
 			// aapt resource value: 0x7f0100b1
 			public const int voiceIcon = 2130772145;
 			
@@ -748,6 +728,33 @@ namespace Example
 			
 			// aapt resource value: 0x7f010027
 			public const int windowNoTitle = 2130772007;
+			
+			// aapt resource value: 0x7f0100d5
+			public const int wwv_horizontal_origin = 2130772181;
+			
+			// aapt resource value: 0x7f0100d9
+			public const int wwv_max_constant_translation = 2130772185;
+			
+			// aapt resource value: 0x7f0100d2
+			public const int wwv_max_pitch = 2130772178;
+			
+			// aapt resource value: 0x7f0100d3
+			public const int wwv_max_roll = 2130772179;
+			
+			// aapt resource value: 0x7f0100d7
+			public const int wwv_orientation_mode = 2130772183;
+			
+			// aapt resource value: 0x7f0100d1
+			public const int wwv_sensor_sampling_period = 2130772177;
+			
+			// aapt resource value: 0x7f0100d6
+			public const int wwv_tilt_sensor_mode = 2130772182;
+			
+			// aapt resource value: 0x7f0100d8
+			public const int wwv_translate_mode = 2130772184;
+			
+			// aapt resource value: 0x7f0100d4
+			public const int wwv_vertical_origin = 2130772180;
 			
 			static Attribute()
 			{
@@ -1513,47 +1520,53 @@ namespace Example
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f0b0023
-			public const int Absolute = 2131427363;
-			
 			// aapt resource value: 0x7f0b0025
-			public const int Constant = 2131427365;
+			public const int Absolute = 2131427365;
 			
-			// aapt resource value: 0x7f0b0026
-			public const int Proportional = 2131427366;
+			// aapt resource value: 0x7f0b0023
+			public const int Automatic = 2131427363;
+			
+			// aapt resource value: 0x7f0b0027
+			public const int Constant = 2131427367;
 			
 			// aapt resource value: 0x7f0b0024
-			public const int Relative = 2131427364;
+			public const int Manual = 2131427364;
 			
-			// aapt resource value: 0x7f0b0058
-			public const int action0 = 2131427416;
+			// aapt resource value: 0x7f0b0028
+			public const int Proportional = 2131427368;
 			
-			// aapt resource value: 0x7f0b0047
-			public const int action_bar = 2131427399;
+			// aapt resource value: 0x7f0b0026
+			public const int Relative = 2131427366;
+			
+			// aapt resource value: 0x7f0b005a
+			public const int action0 = 2131427418;
+			
+			// aapt resource value: 0x7f0b0049
+			public const int action_bar = 2131427401;
 			
 			// aapt resource value: 0x7f0b0000
 			public const int action_bar_activity_content = 2131427328;
 			
-			// aapt resource value: 0x7f0b0046
-			public const int action_bar_container = 2131427398;
+			// aapt resource value: 0x7f0b0048
+			public const int action_bar_container = 2131427400;
 			
-			// aapt resource value: 0x7f0b0042
-			public const int action_bar_root = 2131427394;
+			// aapt resource value: 0x7f0b0044
+			public const int action_bar_root = 2131427396;
 			
 			// aapt resource value: 0x7f0b0001
 			public const int action_bar_spinner = 2131427329;
 			
-			// aapt resource value: 0x7f0b0028
-			public const int action_bar_subtitle = 2131427368;
+			// aapt resource value: 0x7f0b002a
+			public const int action_bar_subtitle = 2131427370;
 			
-			// aapt resource value: 0x7f0b0027
-			public const int action_bar_title = 2131427367;
+			// aapt resource value: 0x7f0b0029
+			public const int action_bar_title = 2131427369;
 			
-			// aapt resource value: 0x7f0b0048
-			public const int action_context_bar = 2131427400;
+			// aapt resource value: 0x7f0b004a
+			public const int action_context_bar = 2131427402;
 			
-			// aapt resource value: 0x7f0b005c
-			public const int action_divider = 2131427420;
+			// aapt resource value: 0x7f0b005e
+			public const int action_divider = 2131427422;
 			
 			// aapt resource value: 0x7f0b0002
 			public const int action_menu_divider = 2131427330;
@@ -1561,20 +1574,20 @@ namespace Example
 			// aapt resource value: 0x7f0b0003
 			public const int action_menu_presenter = 2131427331;
 			
-			// aapt resource value: 0x7f0b0044
-			public const int action_mode_bar = 2131427396;
+			// aapt resource value: 0x7f0b0046
+			public const int action_mode_bar = 2131427398;
 			
-			// aapt resource value: 0x7f0b0043
-			public const int action_mode_bar_stub = 2131427395;
+			// aapt resource value: 0x7f0b0045
+			public const int action_mode_bar_stub = 2131427397;
 			
-			// aapt resource value: 0x7f0b0029
-			public const int action_mode_close_button = 2131427369;
+			// aapt resource value: 0x7f0b002b
+			public const int action_mode_close_button = 2131427371;
 			
-			// aapt resource value: 0x7f0b002a
-			public const int activity_chooser_view_content = 2131427370;
+			// aapt resource value: 0x7f0b002c
+			public const int activity_chooser_view_content = 2131427372;
 			
-			// aapt resource value: 0x7f0b0036
-			public const int alertTitle = 2131427382;
+			// aapt resource value: 0x7f0b0038
+			public const int alertTitle = 2131427384;
 			
 			// aapt resource value: 0x7f0b001c
 			public const int always = 2131427356;
@@ -1582,53 +1595,53 @@ namespace Example
 			// aapt resource value: 0x7f0b0019
 			public const int beginning = 2131427353;
 			
-			// aapt resource value: 0x7f0b0031
-			public const int buttonPanel = 2131427377;
+			// aapt resource value: 0x7f0b0033
+			public const int buttonPanel = 2131427379;
 			
-			// aapt resource value: 0x7f0b0059
-			public const int cancel_action = 2131427417;
+			// aapt resource value: 0x7f0b005b
+			public const int cancel_action = 2131427419;
 			
-			// aapt resource value: 0x7f0b003f
-			public const int checkbox = 2131427391;
+			// aapt resource value: 0x7f0b0041
+			public const int checkbox = 2131427393;
 			
-			// aapt resource value: 0x7f0b005f
-			public const int chronometer = 2131427423;
+			// aapt resource value: 0x7f0b0061
+			public const int chronometer = 2131427425;
 			
 			// aapt resource value: 0x7f0b001d
 			public const int collapseActionView = 2131427357;
 			
-			// aapt resource value: 0x7f0b0037
-			public const int contentPanel = 2131427383;
+			// aapt resource value: 0x7f0b0039
+			public const int contentPanel = 2131427385;
 			
-			// aapt resource value: 0x7f0b003d
-			public const int custom = 2131427389;
+			// aapt resource value: 0x7f0b003f
+			public const int custom = 2131427391;
 			
-			// aapt resource value: 0x7f0b003c
-			public const int customPanel = 2131427388;
+			// aapt resource value: 0x7f0b003e
+			public const int customPanel = 2131427390;
 			
-			// aapt resource value: 0x7f0b0045
-			public const int decor_content_parent = 2131427397;
+			// aapt resource value: 0x7f0b0047
+			public const int decor_content_parent = 2131427399;
 			
-			// aapt resource value: 0x7f0b002d
-			public const int default_activity_button = 2131427373;
+			// aapt resource value: 0x7f0b002f
+			public const int default_activity_button = 2131427375;
 			
 			// aapt resource value: 0x7f0b000c
 			public const int disableHome = 2131427340;
 			
-			// aapt resource value: 0x7f0b0049
-			public const int edit_query = 2131427401;
+			// aapt resource value: 0x7f0b004b
+			public const int edit_query = 2131427403;
 			
 			// aapt resource value: 0x7f0b001a
 			public const int end = 2131427354;
 			
-			// aapt resource value: 0x7f0b0064
-			public const int end_padder = 2131427428;
+			// aapt resource value: 0x7f0b0066
+			public const int end_padder = 2131427430;
 			
-			// aapt resource value: 0x7f0b002b
-			public const int expand_activities_button = 2131427371;
+			// aapt resource value: 0x7f0b002d
+			public const int expand_activities_button = 2131427373;
 			
-			// aapt resource value: 0x7f0b003e
-			public const int expanded_menu = 2131427390;
+			// aapt resource value: 0x7f0b0040
+			public const int expanded_menu = 2131427392;
 			
 			// aapt resource value: 0x7f0b0021
 			public const int fast = 2131427361;
@@ -1639,32 +1652,32 @@ namespace Example
 			// aapt resource value: 0x7f0b000d
 			public const int homeAsUp = 2131427341;
 			
-			// aapt resource value: 0x7f0b002f
-			public const int icon = 2131427375;
+			// aapt resource value: 0x7f0b0031
+			public const int icon = 2131427377;
 			
 			// aapt resource value: 0x7f0b001e
 			public const int ifRoom = 2131427358;
 			
-			// aapt resource value: 0x7f0b002c
-			public const int image = 2131427372;
+			// aapt resource value: 0x7f0b002e
+			public const int image = 2131427374;
+			
+			// aapt resource value: 0x7f0b0065
+			public const int info = 2131427429;
+			
+			// aapt resource value: 0x7f0b005f
+			public const int line1 = 2131427423;
 			
 			// aapt resource value: 0x7f0b0063
-			public const int info = 2131427427;
-			
-			// aapt resource value: 0x7f0b005d
-			public const int line1 = 2131427421;
-			
-			// aapt resource value: 0x7f0b0061
-			public const int line3 = 2131427425;
+			public const int line3 = 2131427427;
 			
 			// aapt resource value: 0x7f0b0009
 			public const int listMode = 2131427337;
 			
-			// aapt resource value: 0x7f0b002e
-			public const int list_item = 2131427374;
+			// aapt resource value: 0x7f0b0030
+			public const int list_item = 2131427376;
 			
-			// aapt resource value: 0x7f0b005b
-			public const int media_actions = 2131427419;
+			// aapt resource value: 0x7f0b005d
+			public const int media_actions = 2131427421;
 			
 			// aapt resource value: 0x7f0b001b
 			public const int middle = 2131427355;
@@ -1681,8 +1694,8 @@ namespace Example
 			// aapt resource value: 0x7f0b000a
 			public const int normal = 2131427338;
 			
-			// aapt resource value: 0x7f0b0033
-			public const int parentPanel = 2131427379;
+			// aapt resource value: 0x7f0b0035
+			public const int parentPanel = 2131427381;
 			
 			// aapt resource value: 0x7f0b0005
 			public const int progress_circular = 2131427333;
@@ -1690,56 +1703,56 @@ namespace Example
 			// aapt resource value: 0x7f0b0006
 			public const int progress_horizontal = 2131427334;
 			
-			// aapt resource value: 0x7f0b0041
-			public const int radio = 2131427393;
+			// aapt resource value: 0x7f0b0043
+			public const int radio = 2131427395;
 			
 			// aapt resource value: 0x7f0b0015
 			public const int screen = 2131427349;
 			
+			// aapt resource value: 0x7f0b003d
+			public const int scrollIndicatorDown = 2131427389;
+			
+			// aapt resource value: 0x7f0b003a
+			public const int scrollIndicatorUp = 2131427386;
+			
 			// aapt resource value: 0x7f0b003b
-			public const int scrollIndicatorDown = 2131427387;
-			
-			// aapt resource value: 0x7f0b0038
-			public const int scrollIndicatorUp = 2131427384;
-			
-			// aapt resource value: 0x7f0b0039
-			public const int scrollView = 2131427385;
-			
-			// aapt resource value: 0x7f0b004b
-			public const int search_badge = 2131427403;
-			
-			// aapt resource value: 0x7f0b004a
-			public const int search_bar = 2131427402;
-			
-			// aapt resource value: 0x7f0b004c
-			public const int search_button = 2131427404;
-			
-			// aapt resource value: 0x7f0b0051
-			public const int search_close_btn = 2131427409;
+			public const int scrollView = 2131427387;
 			
 			// aapt resource value: 0x7f0b004d
-			public const int search_edit_frame = 2131427405;
+			public const int search_badge = 2131427405;
 			
-			// aapt resource value: 0x7f0b0053
-			public const int search_go_btn = 2131427411;
+			// aapt resource value: 0x7f0b004c
+			public const int search_bar = 2131427404;
 			
 			// aapt resource value: 0x7f0b004e
-			public const int search_mag_icon = 2131427406;
+			public const int search_button = 2131427406;
+			
+			// aapt resource value: 0x7f0b0053
+			public const int search_close_btn = 2131427411;
 			
 			// aapt resource value: 0x7f0b004f
-			public const int search_plate = 2131427407;
-			
-			// aapt resource value: 0x7f0b0050
-			public const int search_src_text = 2131427408;
-			
-			// aapt resource value: 0x7f0b0054
-			public const int search_voice_btn = 2131427412;
+			public const int search_edit_frame = 2131427407;
 			
 			// aapt resource value: 0x7f0b0055
-			public const int select_dialog_listview = 2131427413;
+			public const int search_go_btn = 2131427413;
 			
-			// aapt resource value: 0x7f0b0040
-			public const int shortcut = 2131427392;
+			// aapt resource value: 0x7f0b0050
+			public const int search_mag_icon = 2131427408;
+			
+			// aapt resource value: 0x7f0b0051
+			public const int search_plate = 2131427409;
+			
+			// aapt resource value: 0x7f0b0052
+			public const int search_src_text = 2131427410;
+			
+			// aapt resource value: 0x7f0b0056
+			public const int search_voice_btn = 2131427414;
+			
+			// aapt resource value: 0x7f0b0057
+			public const int select_dialog_listview = 2131427415;
+			
+			// aapt resource value: 0x7f0b0042
+			public const int shortcut = 2131427394;
 			
 			// aapt resource value: 0x7f0b000f
 			public const int showCustom = 2131427343;
@@ -1753,8 +1766,8 @@ namespace Example
 			// aapt resource value: 0x7f0b0022
 			public const int slow = 2131427362;
 			
-			// aapt resource value: 0x7f0b0032
-			public const int spacer = 2131427378;
+			// aapt resource value: 0x7f0b0034
+			public const int spacer = 2131427380;
 			
 			// aapt resource value: 0x7f0b0007
 			public const int split_action_bar = 2131427335;
@@ -1768,35 +1781,35 @@ namespace Example
 			// aapt resource value: 0x7f0b0018
 			public const int src_over = 2131427352;
 			
-			// aapt resource value: 0x7f0b005a
-			public const int status_bar_latest_event_content = 2131427418;
+			// aapt resource value: 0x7f0b005c
+			public const int status_bar_latest_event_content = 2131427420;
 			
-			// aapt resource value: 0x7f0b0052
-			public const int submit_area = 2131427410;
+			// aapt resource value: 0x7f0b0054
+			public const int submit_area = 2131427412;
 			
 			// aapt resource value: 0x7f0b000b
 			public const int tabMode = 2131427339;
 			
+			// aapt resource value: 0x7f0b0064
+			public const int text = 2131427428;
+			
 			// aapt resource value: 0x7f0b0062
-			public const int text = 2131427426;
+			public const int text2 = 2131427426;
+			
+			// aapt resource value: 0x7f0b003c
+			public const int textSpacerNoButtons = 2131427388;
 			
 			// aapt resource value: 0x7f0b0060
-			public const int text2 = 2131427424;
+			public const int time = 2131427424;
 			
-			// aapt resource value: 0x7f0b003a
-			public const int textSpacerNoButtons = 2131427386;
+			// aapt resource value: 0x7f0b0032
+			public const int title = 2131427378;
 			
-			// aapt resource value: 0x7f0b005e
-			public const int time = 2131427422;
+			// aapt resource value: 0x7f0b0037
+			public const int title_template = 2131427383;
 			
-			// aapt resource value: 0x7f0b0030
-			public const int title = 2131427376;
-			
-			// aapt resource value: 0x7f0b0035
-			public const int title_template = 2131427381;
-			
-			// aapt resource value: 0x7f0b0034
-			public const int topPanel = 2131427380;
+			// aapt resource value: 0x7f0b0036
+			public const int topPanel = 2131427382;
 			
 			// aapt resource value: 0x7f0b0008
 			public const int up = 2131427336;
@@ -1804,11 +1817,11 @@ namespace Example
 			// aapt resource value: 0x7f0b0012
 			public const int useLogo = 2131427346;
 			
-			// aapt resource value: 0x7f0b0056
-			public const int windowView1 = 2131427414;
+			// aapt resource value: 0x7f0b0058
+			public const int windowView1 = 2131427416;
 			
-			// aapt resource value: 0x7f0b0057
-			public const int windowView2 = 2131427415;
+			// aapt resource value: 0x7f0b0059
+			public const int windowView2 = 2131427417;
 			
 			// aapt resource value: 0x7f0b0020
 			public const int withText = 2131427360;
@@ -4307,7 +4320,7 @@ namespace Example
 			// aapt resource value: 1
 			public const int ViewStubCompat_android_layout = 1;
 			
-			public static int[] WindowView = new int[]
+			public static int[] wwv_WindowView = new int[]
 			{
 					2130772177,
 					2130772178,
@@ -4316,31 +4329,35 @@ namespace Example
 					2130772181,
 					2130772182,
 					2130772183,
-					2130772184};
+					2130772184,
+					2130772185};
 			
 			// aapt resource value: 4
-			public const int WindowView_horizontal_origin = 4;
+			public const int wwv_WindowView_wwv_horizontal_origin = 4;
 			
-			// aapt resource value: 7
-			public const int WindowView_max_constant_translation = 7;
+			// aapt resource value: 8
+			public const int wwv_WindowView_wwv_max_constant_translation = 8;
 			
 			// aapt resource value: 1
-			public const int WindowView_max_pitch = 1;
+			public const int wwv_WindowView_wwv_max_pitch = 1;
 			
 			// aapt resource value: 2
-			public const int WindowView_max_roll = 2;
-			
-			// aapt resource value: 5
-			public const int WindowView_orientation_mode = 5;
-			
-			// aapt resource value: 0
-			public const int WindowView_sensor_sampling_period = 0;
+			public const int wwv_WindowView_wwv_max_roll = 2;
 			
 			// aapt resource value: 6
-			public const int WindowView_translate_mode = 6;
+			public const int wwv_WindowView_wwv_orientation_mode = 6;
+			
+			// aapt resource value: 0
+			public const int wwv_WindowView_wwv_sensor_sampling_period = 0;
+			
+			// aapt resource value: 5
+			public const int wwv_WindowView_wwv_tilt_sensor_mode = 5;
+			
+			// aapt resource value: 7
+			public const int wwv_WindowView_wwv_translate_mode = 7;
 			
 			// aapt resource value: 3
-			public const int WindowView_vertical_origin = 3;
+			public const int wwv_WindowView_wwv_vertical_origin = 3;
 			
 			static Styleable()
 			{

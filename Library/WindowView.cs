@@ -48,6 +48,43 @@ namespace Jmedeisis.WindowView
         Proportional
     }
 
+	/// <summary>
+	/// Determines when and how tilt motion tracking starts and stops.
+	/// </summary>
+	public enum TiltSensorMode
+	{
+		/// <summary>
+		/// Tilt motion tracking is completely automated and requires no explicit intervention.
+        /// WindowView (un)registers for hardware motion sensor events during View lifecycle events
+        /// such as {@link #onAttachedToWindow()}, {@link #onDetachedFromWindow()} and
+        /// {@link #onWindowFocusChanged(boolean)}.
+        /// Note that in this mode, each WindowView tracks motion events independently.
+		/// </summary>
+		AUTOMATIC,
+
+		/// <summary>
+		/// Tilt motion tracking must be manually initiated and stopped. There are two options:
+		/// <ul>
+		/// <li>Use {@link #startTiltTracking()} and {@link #stopTiltTracking()}.
+		/// Good candidate opportunities to do this are the container Activity's / Fragment's
+		/// onResume() and onPause() lifecycle events.</li>
+		/// <li>Use {@link #attachTiltTracking(TiltSensor)} and
+		/// {@link #detachTiltTracking(TiltSensor)}. This mode is recommended when using multiple
+		/// WindowViews in a single logical layout. The externally managed {@link TiltSensor}
+		/// should be started and stopped using {@link TiltSensor#startTracking(int)} and
+		/// {@link TiltSensor#stopTracking()} as appropriate. Good candidate opportunities to do
+		/// this are the container Activity's / Fragment's onResume() and onPause() lifecycle
+		/// events.</li>
+		/// </ul>
+		/// <p>
+		/// Note that in this mode, care must be taken to stop motion tracking at the appropriate
+		/// lifecycle events to ensure that hardware sensors are detached and do not cause
+		/// unnecessary battery drain.
+		/// The manual.
+		/// </summary>
+		MANUAL
+	}
+
     public class WindowView : ImageView, TiltSensor.ITiltListener
     {
 
@@ -77,6 +114,7 @@ namespace Jmedeisis.WindowView
 
         protected TiltSensor sensor;
         private SensorDelay sensorSamplingPeriod;
+		private TiltSensorMode tiltSensorMode;
         private TranslateMode translateMode;
         private float verticalOriginDeg;
         protected float widthDifference;
@@ -121,29 +159,34 @@ namespace Jmedeisis.WindowView
 
             if (null != attrs)
             {
-                var a = context.ObtainStyledAttributes(attrs, Resource.Styleable.WindowView);
+                var a = context.ObtainStyledAttributes(attrs, Resource.Styleable.wwv_WindowView);
                 // Buggy line: 
                 sensorSamplingPeriod = DefaultSensorSamplingPeriodUs;
                 //(SensorDelay)(a.GetInt(Resource.Styleable.WindowView_sensor_sampling_period, (int)sensorSamplingPeriod));
-                maxPitchDeg = a.GetFloat(Resource.Styleable.WindowView_max_pitch, maxPitchDeg);
-                maxRollDeg = a.GetFloat(Resource.Styleable.WindowView_max_roll, maxRollDeg);
-                verticalOriginDeg = a.GetFloat(Resource.Styleable.WindowView_vertical_origin,
-                    verticalOriginDeg);
-                horizontalOriginDeg = a.GetFloat(Resource.Styleable.WindowView_horizontal_origin,
+				maxPitchDeg = a.GetFloat(Resource.Styleable.wwv_WindowView_wwv_max_pitch, maxPitchDeg);
+				maxRollDeg = a.GetFloat(Resource.Styleable.wwv_WindowView_wwv_max_roll, maxRollDeg);
+				verticalOriginDeg = a.GetFloat(Resource.Styleable.wwv_WindowView_wwv_vertical_origin,verticalOriginDeg);
+                horizontalOriginDeg = a.GetFloat(Resource.Styleable.wwv_WindowView_wwv_horizontal_origin,
                     horizontalOriginDeg);
 
-                var orientationModeIndex = a.GetInt(Resource.Styleable.WindowView_orientation_mode, -1);
+				int tiltSensorModeIndex = a.GetInt(Resource.Styleable.wwv_WindowView_wwv_tilt_sensor_mode, -1);
+				if (tiltSensorModeIndex >= 0)
+				{
+					tiltSensorMode = (TiltSensorMode)tiltSensorModeIndex;
+				}
+
+                var orientationModeIndex = a.GetInt(Resource.Styleable.wwv_WindowView_wwv_orientation_mode, -1);
                 if (orientationModeIndex >= 0)
                 {
                     orientationMode = (OrientationMode)orientationModeIndex;
                 }
-                var translateModeIndex = a.GetInt(Resource.Styleable.WindowView_translate_mode, -1);
+                var translateModeIndex = a.GetInt(Resource.Styleable.wwv_WindowView_wwv_translate_mode, -1);
                 if (translateModeIndex >= 0)
                 {
                     translateMode = (TranslateMode)translateModeIndex;
                 }
 
-                maxConstantTranslation = a.GetDimension(Resource.Styleable.WindowView_max_constant_translation,
+                maxConstantTranslation = a.GetDimension(Resource.Styleable.wwv_WindowView_wwv_max_constant_translation,
                     maxConstantTranslation);
                 a.Recycle();
             }

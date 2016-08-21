@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>Xamarin.WindowView</id>
-    <version>0.0.0.1-alpha</version>
+    <version>0.0.0.2-alpha</version>
     <title>WindowView for Xamarin.Android</title>
     <authors>Justas Medeisis, Antonio Feregrino</authors>
     <owners>Messier16</owners>
