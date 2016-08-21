@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <package>
   <metadata>
-    <id>Android.WindowView</id>
+    <id>Xamarin.WindowView</id>
     <version>0.0.0.1-alpha</version>
-    <title>Messier16 controls for Xamarin.Forms</title>
+    <title>WindowView for Xamarin.Android</title>
     <authors>Justas Medeisis, Antonio Feregrino</authors>
     <owners>Messier16</owners>
     <projectUrl>https://github.com/messier16/Xamarin.WindowView</projectUrl>
