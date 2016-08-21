@@ -9,7 +9,10 @@ using Jmedeisis.WindowView;
 
 namespace Example
 {
-    [Activity(Label = "@string/app_name", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "@string/app_name", 
+	          MainLauncher = true, 
+	          Icon = "@drawable/icon",
+	          Theme="@style/AppTheme")]
     public class DemoActivity : Activity
     {
         int count = 1;
